@@ -1,0 +1,87 @@
+﻿<ion-view view-title="Exchange">
+    <ion-nav-buttons side="right">
+        <a class="button" href="#/tab/dash">
+            Submit
+        </a>
+    </ion-nav-buttons>
+    <!--<div class="bar bar-subheader bar-stable">
+        <h2 class="title">Step 3</h2>
+    </div>-->
+    <ion-content>
+        <div class="list">
+            <!--<div class="item">
+                <div class="input-label">
+                    You're requesting <b>SGD</b> to <b>MYR</b>
+                </div>
+            </div>-->
+            <!--<label class="item item-input item-select">
+                <select ng-model="form.currencyFrom">
+                    <option value="MYR" ng-selected="selected">RM</option>
+                    <option value="SGD">SGD</option>
+                    <option value="HKD">HKD</option>
+                    <option value="KRW">KRW</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </label>-->
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">Exchange Amount</span>
+                </div>
+                <div class="col">
+                    <span class="input-inline">
+                        <span ng-click="modal.show()">SGD &nbsp;</span>
+                        <input id="amount" type="text" ng-model="form.amount" placeholder="Enter your amount">
+                    </span>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">Current Rate</span>
+                </div>
+                <div class="col">
+                    <span class="input-label"><i>2.80</i></span>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">Received Amount</span>
+                </div>
+                <div class="col">
+                    <b><span class="input-label">{{form.amount * form.rate | currency:'+MYR '}}</span></b>
+                </div>
+            </div>
+            <!--<div class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Follow Market Rate
+            </div>-->
+
+        </div>
+        <!--<div class="list" style="text-align:center">
+            <button ng-click="submitPost(form)" class="button button-outline button-positive">
+                Submit
+            </button>
+        </div>-->
+
+        <!--<div class="item row">
+            <div class="col">
+                <div class="item item-select">
+                    <select ng-model="form.currency">
+                        <option>36</option>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <label class="item item-input">
+                    <span class="input-label">$</span>
+                    <input type="text" placeholder="Amount">
+                </label>
+            </div>
+        </div>-->
+    </ion-content>
+</ion-view>

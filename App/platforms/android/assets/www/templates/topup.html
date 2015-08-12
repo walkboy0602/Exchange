@@ -1,0 +1,52 @@
+﻿<ion-view view-title="Topup">
+    <ion-nav-buttons side="right">
+        <a class="button" href="#/tab/dash">
+            Submit
+        </a>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">Debit Card Number</span>
+                </div>
+                <div class="col">
+                    <span class="input-inline">
+                        <input type="text" value="1234-5678-8888-0000" placeholder="XXXX-XXXX-XXXX-XXXX">
+                    </span>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">Card Expire Date</span>
+                </div>
+                <div class="col">
+                    <span class="input-inline">
+                        <input type="text" ng-model="form.expireDate" placeholder="MMYY">
+                    </span>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">CVV</span>
+                </div>
+                <div class="col">
+                    <span class="input-inline">
+                        <input type="password" ng-model="form.cvv" placeholder="XXX">
+                    </span>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col col.50">
+                    <span class="input-label">Reload Amount</span>
+                </div>
+                <div class="col">
+                    <span class="input-inline">
+                        <span ng-click="modal.show()">SGD &nbsp;</span>
+                        <input type="text" ng-model="form.amount" placeholder="Enter your amount">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

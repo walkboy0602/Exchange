@@ -1,0 +1,83 @@
+﻿
+<ion-view view-title="Match">
+    <ion-pane class="black-bg">
+        <ion-header-bar class="bar-transparent">
+            <h1 class="title">Help Out</h1>
+        </ion-header-bar>
+        <swipe-cards>
+            <swipe-card on-card-swipe="cardSwiped()" id="start-card">
+                Swipe down for a new card
+            </swipe-card>
+            <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
+                <div ng-controller="CardCtrl">
+                    <!--<div class="title">
+                        {{card.title}}
+                    </div>
+                    <div class="image">
+                        <img ng-src="{{card.image}}">
+                    </div>
+                    <div class="button-bar">
+                        <button class="button button-clear button-positive" ng-click="goAway()">Answer</button>
+                        <button class="button button-clear button-positive" ng-click="goAway()">Decline</button>
+                    </div>-->
+                    <div class="item item-avatar">
+                        <img src="/img/mcfly.jpg">
+                        <h2>Marty McFly</h2>
+                        <p>Online</p>
+                    </div>
+
+                    <div class="item item-body">
+                        <div class="row">
+                            <div class="col">
+                                <label>Exchange:</label>
+                            </div>
+                            <div class="col">
+                                <span>USD 1000</span>
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col">
+                                <label>Rate:</label>
+                            </div>
+                            <div class="col">
+                                <span>3.82</span>
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col">
+                                <label>Location:</label>
+                            </div>
+                            <div class="col">
+                               <span>Mid Valley</span>
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col">
+                                <strong>Your Amount:</strong>
+                            </div>
+                            <div class="col">
+                                <strong>MYR 3,820</strong>
+                            </div>
+                        </div>  
+                          
+                    </div>
+                    <div class="item tabs tabs-secondary tabs-icon-left">
+                        <a class="tab-item" href="#" ng-click="goAway()">
+                            <i class="icon ion-heart"></i>
+                            Shortlist
+                        </a>
+                        <a class="tab-item" href="#" ng-click="goAway()">
+                            <i class="icon ion-chatbox"></i>
+                            Chat
+                        </a>
+                        <a class="tab-item" href="#" ng-click="goAway()">
+                            <i class="icon ion-forward"></i>
+                            Next
+                        </a>
+                    </div>
+
+                </div>
+            </swipe-card>
+        </swipe-cards>
+    </ion-pane>
+</ion-view>

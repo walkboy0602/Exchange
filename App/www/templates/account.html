@@ -1,0 +1,40 @@
+﻿
+<ion-view view-title="My Wallet">
+    <!--<ion-nav-buttons side="left">
+        <a class="button icon-left ion-navicon-round" href="#/tab/dash">
+            
+        </a>
+    </ion-nav-buttons>-->
+    <ion-content>
+        <ion-list show-reorder="true">
+            <ion-item class="item-remove-animate item-avatar" ng-repeat="acct in accounts"
+                      type="item-text-wrap" >
+                <img ng-src="{{acct.flag}}">
+                <div class="row">
+                    <div class="col">
+                        <h2>{{acct.currency}}</h2>
+                    </div>
+                    <div class="col">
+                        <h2>{{acct.balance}}</h2>
+                    </div>
+                </div>
+
+                <!--<ion-reorder-button class="ion-navicon"
+                                    on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+                </ion-reorder-button>-->
+            </ion-item>
+
+            <!--<ion-item ng-repeat="acc in accounts">
+                <div class="row">
+                    <div class="col">
+                        <b>{{acc.currency}}</b>
+                    </div>
+                    <div class="col">
+                        <span>{{acc.balance}}</span>
+                    </div>
+                </div>  
+            </ion-item>-->
+        </ion-list>
+    </ion-content>
+</ion-view>
+

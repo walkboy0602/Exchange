@@ -1,0 +1,20 @@
+﻿<ion-view view-title="Select Your Currency">
+    <ion-nav-buttons side="left">
+        <a class="button" href="#/tab/dash">
+            Back
+        </a>
+    </ion-nav-buttons>
+    <!--<div class="bar bar-subheader bar-stable">
+        <h2 class="title">Step 1</h2>
+    </div>-->
+    <ion-content class="has-subheader">
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="currency in currencies | orderBy: 'name'"
+                      type="item-text-wrap" href="#/currency-to" ng-click="currencyFrom(currency.name)">
+                <img ng-src="{{currency.flag}}">
+                <h2>{{currency.name}}</h2>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

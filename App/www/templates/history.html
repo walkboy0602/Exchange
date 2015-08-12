@@ -1,0 +1,20 @@
+﻿
+<ion-view view-title="History">
+    <ion-content>
+        <ion-list show-reorder="true">
+            <ion-item class="item-remove-animate item-avatar" ng-repeat="hist in history"
+                      type="item-text-wrap">
+                <img ng-src="{{acct.flag}}">
+                <div class="row">
+                    <div class="col">
+                        <h2>{{acct.currency}}</h2>
+                    </div>
+                    <div class="col">
+                        <h2>{{acct.balance}}</h2>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
